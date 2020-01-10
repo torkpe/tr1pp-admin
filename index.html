@@ -1,0 +1,604 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#admin-api-design" class="toc-h2 toc-link" data-title="Admin API Design">Admin API Design</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#making-requests" class="toc-h1 toc-link" data-title="MAKING REQUESTS">MAKING REQUESTS</a>
+          </li>
+          <li>
+            <a href="#admin" class="toc-h1 toc-link" data-title="Admin">Admin</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#admin-login" class="toc-h2 toc-link" data-title="Admin Login">Admin Login</a>
+                  </li>
+                  <li>
+                    <a href="#forgot-password" class="toc-h2 toc-link" data-title="Forgot password">Forgot password</a>
+                  </li>
+                  <li>
+                    <a href="#online" class="toc-h2 toc-link" data-title="Online">Online</a>
+                  </li>
+                  <li>
+                    <a href="#get-admins" class="toc-h2 toc-link" data-title="Get Admins">Get Admins</a>
+                  </li>
+                  <li>
+                    <a href="#get-driver" class="toc-h2 toc-link" data-title="Get Driver">Get Driver</a>
+                  </li>
+                  <li>
+                    <a href="#entries" class="toc-h2 toc-link" data-title="Entries">Entries</a>
+                  </li>
+                  <li>
+                    <a href="#error-response" class="toc-h2 toc-link" data-title="Error Response">Error Response</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1><h2 id='admin-api-design'>Admin API Design</h2>
+<p><code>base URI</code> is http://3.9.38.52:4501/admin/</p>
+<h1 id='making-requests'>MAKING REQUESTS</h1>
+<p>Aside the endpoints; login and signin, users are required to to provide an authorization token to utilize the various endpoints.</p>
+
+<p>A token is generated after successful login or successful confirmation. This token is attached to requests as headers or body.</p>
+
+<p><code>Authorization: payload.secret.expiration date</code></p>
+<h1 id='admin'>Admin</h1><h2 id='admin-login'>Admin Login</h2>
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"username@email.com"</span><span class="p">,</span><span class="s2">"password"</span><span class="p">:</span><span class="s2">"password"</span><span class="p">},</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"adminName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"first last"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTIVE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"last"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c943e3887806ea974aaab83698e0cab5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01_profile/tr1pp-LGGQc-man-image.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"04c80069297d7b5fb8ea5b7e53539cb4"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8d8dac51580302d06d723bff587cce67"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"first"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"section"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a4f0337dc39c963882526d38933e3add"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cb7f7fd2331dfdbce606c5ae003b60a1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"changePasswordOnFirstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"username@email.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7fd3bded7ad86077da221eff1607ac5d"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562453398</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Operations Analyst"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08055573128"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1989-07-26"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"resetPassword"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"Driver Partner Payment"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"general"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Driver Partner Registration"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Driver Partner Account"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"streetAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20 Test"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3601"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Global_Admin_L1"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"policy"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"admin"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s2">"superadmin"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"accessLevel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GLOBAL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"sensitiveDataAccess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Can login to all admin panels globally and perform all actions"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"expirySeconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastRead"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578559616539</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"accessToken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ996de6594e1c.eyJwaG9uZV9udW1iZXIiOiIwODA1NTU3MzEyOCIsImxhc3RfbmFtZSI6IkF3b2RvbGEiLCJyZWdpb25faWQiOiJjOTQzZTM4ODc4MDZlYTk3NGFhYWI4MzY5OGUwY2FiNSIsImxhc3RfcmVhZCI6MTU3ODU1OTYxNjUzOSwicHJvZmlsZV9pbWFnZSI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS90cjFwcHVwbG9hZDAxL2FkbWluX3Byb2ZpbGUvdHIxcHAtTEdHUWMtbWFuLWltYWdlLnBuZyIsInVwZGF0ZWRfYXQiOjE1NzYwODI4MjksImFkbWluX2lkIjoiMDRjODAwNjkyOTdkN2I1ZmI4ZWE1Yjdl"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint logs in admin.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>Post /login</code></p>
+<h3 id='request'>Request</h3>
+<ul>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='response'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='forgot-password'>Forgot password</h2>
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"dayoajisebutu@gmail.com"</span><span class="p">},</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"A link has been sent to your email."</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint sends forgot password link to admin&#39;s email</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>Post /password/forgot</code></p>
+<h3 id='request-2'>Request</h3>
+<ul>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='response-2'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='online'>Online</h2>
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="s2">"putOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+
+
+</span></code></pre>
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Now you are offline"</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint updates admin&#39;s status to online or offline</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>Put /online</code></p>
+<h3 id='request-3'>Request</h3>
+<ul>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='response-3'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='get-admins'>Get Admins</h2><h3 id='http-request-4'>HTTP Request</h3>
+<p><code>Get /admins</code></p>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08102505206"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oluwaseun"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c943e3887806ea974aaab83698e0cab5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01_profile/tr1pp-a4dRr-pers.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f32ac8a854e5e4fd177043a83bc9093d"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2301"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8d8dac51580302d06d723bff587cce67"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Temitope"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"section"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20384d82ff6316d46a1c8d3cd0d4d9de"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7cc083217ef14d8e71592cff8dfef8cf"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"temitope.emmanuel63@gmail.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4aff157154cbfe62cd6ce681cf2a50ef"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automation Tester"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTIVE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9093"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1995-09-14"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1575539778</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"street_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Osapa london"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Admins retrieved"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint gets all admins.</p>
+<h3 id='response-4'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='get-driver'>Get Driver</h2><h3 id='http-request-5'>HTTP Request</h3>
+<p><code>Get /drivers/:id</code></p>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"driverType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"driver"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"415e3b50561ed630445185d13f519735"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"documents_verified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIDR6634"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"holdType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issues"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"richie"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"documents"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01/driver_profile/tr1pp_a1b12712c749108f986c73a33ac816a3_465f252f34c4ce5edc485eb082feaaea"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"paymentInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG-RIDR6634"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b76da76cfb73511fc163dde2dcde7102"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+234-8035436136"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mushin"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"statusReason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bankDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-02T12:29:11.070Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1577957002</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"talktoriche@yahoo.com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a1b12712c749108f986c73a33ac816a3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pendingDocs"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">],</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint gets a driver</p>
+<h2 id='entries'>Entries</h2><h3 id='http-request-6'>HTTP Request</h3>
+<p><code>Get /drivers</code></p>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"driverType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"driver"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"415e3b50561ed630445185d13f519735"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"documents_verified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIDR6634"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"holdType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issues"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"richie"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"documents"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01/driver_profile/tr1pp_a1b12712c749108f986c73a33ac816a3_465f252f34c4ce5edc485eb082feaaea"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"paymentInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG-RIDR6634"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b76da76cfb73511fc163dde2dcde7102"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+234-8035436136"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mushin"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"statusReason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bankDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-02T12:29:11.070Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1577957002</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"talktoriche@yahoo.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a1b12712c749108f986c73a33ac816a3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pendingDocs"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='response-5'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='url-query-parameters'>URL Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>zoneId</td>
+<td>Selected zone id</td>
+</tr>
+<tr>
+<td>regionId</td>
+<td>Selected zone id</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>Number of entries to skip in DB</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>Number of entries to return from DB</td>
+</tr>
+</tbody></table>
+<h3 id='url-optional-query-parameters'>URL Optional Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>verificationStatus</td>
+<td>has value of boolean</td>
+</tr>
+<tr>
+<td>approvalStatus</td>
+<td>has value of boolean</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+</tr>
+</tbody></table>
+<h3 id='query-sample'>Query Sample</h3>
+<p><code>status=pending%20failed%20passed&amp;skip=10&amp;limit=10&amp;regionId=278372hd7y8dy2387yd72g&amp;zoneId=29373927dh2dh872h29hd92&amp;verificationStatus=true&amp;approvalStatus=true</code></p>
+<h2 id='error-response'>Error Response</h2>
+<p>{
+  &quot;error&quot;: {
+    &quot;message&quot;: &quot;Some error message&quot;,
+    &quot;status&quot;: error status code
+  }
+ }</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
