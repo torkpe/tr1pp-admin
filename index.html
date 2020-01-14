@@ -248,6 +248,33 @@
                     <a href="#entries" class="toc-h2 toc-link" data-title="Entries">Entries</a>
                   </li>
                   <li>
+                    <a href="#appointments" class="toc-h2 toc-link" data-title="Appointments">Appointments</a>
+                  </li>
+                  <li>
+                    <a href="#technical-center" class="toc-h2 toc-link" data-title="Technical center">Technical center</a>
+                  </li>
+                  <li>
+                    <a href="#verify-document" class="toc-h2 toc-link" data-title="Verify Document">Verify Document</a>
+                  </li>
+                  <li>
+                    <a href="#verify-vehicle" class="toc-h2 toc-link" data-title="Verify Vehicle">Verify Vehicle</a>
+                  </li>
+                  <li>
+                    <a href="#checkin-checkout" class="toc-h2 toc-link" data-title="Checkin / Checkout">Checkin / Checkout</a>
+                  </li>
+                  <li>
+                    <a href="#service-status-approval-status-verification-status-status" class="toc-h2 toc-link" data-title="Service Status / Approval Status / Verification Status / Status">Service Status / Approval Status / Verification Status / Status</a>
+                  </li>
+                  <li>
+                    <a href="#passengers" class="toc-h2 toc-link" data-title="Passengers">Passengers</a>
+                  </li>
+                  <li>
+                    <a href="#passenger" class="toc-h2 toc-link" data-title="Passenger">Passenger</a>
+                  </li>
+                  <li>
+                    <a href="#passenger-block-activate-hold" class="toc-h2 toc-link" data-title="Passenger  Block / Activate / Hold">Passenger  Block / Activate / Hold</a>
+                  </li>
+                  <li>
                     <a href="#error-response" class="toc-h2 toc-link" data-title="Error Response">Error Response</a>
                   </li>
               </ul>
@@ -269,7 +296,7 @@
 <blockquote>
 <p>Request body</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"username@email.com"</span><span class="p">,</span><span class="s2">"password"</span><span class="p">:</span><span class="s2">"password"</span><span class="p">},</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="s2">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">},</span><span class="w">
 
 </span></code></pre>
 <blockquote>
@@ -278,57 +305,49 @@
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"adminName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"first last"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTIVE"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"last"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c943e3887806ea974aaab83698e0cab5"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01_profile/tr1pp-LGGQc-man-image.png"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"04c80069297d7b5fb8ea5b7e53539cb4"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8d8dac51580302d06d723bff587cce67"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"first"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"section"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a4f0337dc39c963882526d38933e3add"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cb7f7fd2331dfdbce606c5ae003b60a1"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"changePasswordOnFirstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"username@email.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7fd3bded7ad86077da221eff1607ac5d"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562453398</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Operations Analyst"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08055573128"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1989-07-26"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"adminType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"resetPassword"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"changePasswordOnFirstLogin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"resetPassword"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="s2">"Driver Partner Payment"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"general"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"Driver Partner Registration"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"Driver Partner Account"</span><span class="w">
+        </span><span class="s2">"String"</span><span class="w">
       </span><span class="p">],</span><span class="w">
-      </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"streetAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20 Test"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"streetAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3601"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Global_Admin_L1"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"policy"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"admin"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s2">"superadmin"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">},</span><span class="w">
-        </span><span class="s2">"accessLevel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GLOBAL"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"sensitiveDataAccess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Can login to all admin panels globally and perform all actions"</span><span class="w">
+        </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"policy"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"admin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w"> </span><span class="s2">"superadmin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"accessLevel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"sensitiveDataAccess"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="s2">"expirySeconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"lastRead"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578559616539</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"accessToken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ996de6594e1c.eyJwaG9uZV9udW1iZXIiOiIwODA1NTU3MzEyOCIsImxhc3RfbmFtZSI6IkF3b2RvbGEiLCJyZWdpb25faWQiOiJjOTQzZTM4ODc4MDZlYTk3NGFhYWI4MzY5OGUwY2FiNSIsImxhc3RfcmVhZCI6MTU3ODU1OTYxNjUzOSwicHJvZmlsZV9pbWFnZSI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS90cjFwcHVwbG9hZDAxL2FkbWluX3Byb2ZpbGUvdHIxcHAtTEdHUWMtbWFuLWltYWdlLnBuZyIsInVwZGF0ZWRfYXQiOjE1NzYwODI4MjksImFkbWluX2lkIjoiMDRjODAwNjkyOTdkN2I1ZmI4ZWE1Yjdl"</span><span class="w">
+      </span><span class="s2">"expirySeconds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastRead"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"accessToken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sring"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -348,12 +367,12 @@
 <blockquote>
 <p>Request body</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"dayoajisebutu@gmail.com"</span><span class="p">},</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">},</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Response body</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"A link has been sent to your email."</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>This endpoint sends forgot password link to admin&#39;s email</p>
 <h3 id='http-request-2'>HTTP Request</h3>
@@ -372,14 +391,14 @@
 <p>Request body</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="w">
-</span><span class="p">{</span><span class="s2">"putOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="s2">"putOnline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">},</span><span class="w">
 
 
 </span></code></pre>
 <blockquote>
 <p>Response body</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Now you are offline"</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>This endpoint updates admin&#39;s status to online or offline</p>
 <h3 id='http-request-3'>HTTP Request</h3>
@@ -402,42 +421,39 @@
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08102505206"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oluwaseun"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c943e3887806ea974aaab83698e0cab5"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01_profile/tr1pp-a4dRr-pers.png"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f32ac8a854e5e4fd177043a83bc9093d"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2301"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8d8dac51580302d06d723bff587cce67"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Temitope"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"section"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20384d82ff6316d46a1c8d3cd0d4d9de"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7cc083217ef14d8e71592cff8dfef8cf"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"temitope.emmanuel63@gmail.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4aff157154cbfe62cd6ce681cf2a50ef"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automation Tester"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTIVE"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9093"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1995-09-14"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"adminType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">],</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1575539778</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"street_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Osapa london"</span><span class="w">
+      </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"profileImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isTeamLead"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"subDepartment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"roleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"department"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isOnline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adminType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstLogin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"String"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"streetAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Admins retrieved"</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>This endpoint gets all admins.</p>
@@ -454,39 +470,37 @@
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"driverType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"driver"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"415e3b50561ed630445185d13f519735"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"documents_verified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIDR6634"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"holdType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"documentsVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"issues"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"richie"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"documents"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-    </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01/driver_profile/tr1pp_a1b12712c749108f986c73a33ac816a3_465f252f34c4ce5edc485eb082feaaea"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"paymentInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-    </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG-RIDR6634"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b76da76cfb73511fc163dde2dcde7102"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+234-8035436136"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mushin"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"statusReason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"bankDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-02T12:29:11.070Z"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1577957002</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"talktoriche@yahoo.com"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a1b12712c749108f986c73a33ac816a3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payoutDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payoutDetails"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"pendingDocs"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-    </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-    </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"statusLogs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
@@ -501,39 +515,37 @@
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"driverType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"driver"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"415e3b50561ed630445185d13f519735"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"documents_verified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIDR6634"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"holdType"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"serviceStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"documentsVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"issues"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lagos"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"richie"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"documents"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://s3.amazonaws.com/tr1ppupload01/driver_profile/tr1pp_a1b12712c749108f986c73a33ac816a3_465f252f34c4ce5edc485eb082feaaea"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"driverImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"approvalStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"paymentInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG-RIDR6634"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b76da76cfb73511fc163dde2dcde7102"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+234-8035436136"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mushin"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"statusReason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dfff35e0722b7a4e2dd3f93c5795e022"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"bankDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-02T12:29:11.070Z"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1577957002</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"talktoriche@yahoo.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a1b12712c749108f986c73a33ac816a3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"snId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"walletId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"driverMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"vehicleVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payoutDetailsVerified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payoutDetails"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"driverEmail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disengaged"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"pendingDocs"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Driver Partner Payment"</span><span class="p">]</span><span class="w">
+      </span><span class="s2">"statusLogs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -583,17 +595,434 @@
 </tr>
 <tr>
 <td>status</td>
-<td>String</td>
+<td>Collection of all the status separated by space</td>
+</tr>
+<tr>
+<td>location</td>
+<td>collection of appointmentId separated by space</td>
+</tr>
+<tr>
+<td>searchString</td>
+<td>search key of driver name</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>Time in string form</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>Time in string form</td>
 </tr>
 </tbody></table>
 <h3 id='query-sample'>Query Sample</h3>
-<p><code>status=pending%20failed%20passed&amp;skip=10&amp;limit=10&amp;regionId=278372hd7y8dy2387yd72g&amp;zoneId=29373927dh2dh872h29hd92&amp;verificationStatus=true&amp;approvalStatus=true</code></p>
+<p><code>status=pending%20failed%20passed&amp;skip=10&amp;limit=10&amp;regionId=278372hd7y8dy2387yd72g&amp;zoneId=29373927dh2dh872h29hd92&amp;verificationStatus=true&amp;approvalStatus=true&amp;location=id_1%20id_2%20id_3</code></p>
+<h2 id='appointments'>Appointments</h2><h3 id='http-request-7'>HTTP Request</h3>
+<p><code>Post /appointments</code></p>
+
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"startTime"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"endTime"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"placeId"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"roomId"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bucketBuffer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"String"</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='response-6'>Response</h3>
+<ul>
+<li>Status: 201 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='technical-center'>Technical center</h2><h3 id='http-request-8'>HTTP Request</h3>
+<p><code>Get /issues</code></p>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"attentionRequired"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isAssigned"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"checkedIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignedBy"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"agent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issueSeverity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issueCategory"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"helpId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"tripId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trip"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="s2">"regionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issuePriority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ticketId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shortDescription"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"appointment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="s2">"reporter"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="s2">"team"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"appointments"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="s2">"actionBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"reporterType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issueType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"issueRefNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h3 id='url-query-parameters-2'>URL Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>zoneId</td>
+<td>Selected zone id</td>
+</tr>
+<tr>
+<td>regionId</td>
+<td>Selected zone id</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>Number of entries to skip in DB</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>Number of entries to return from DB</td>
+</tr>
+</tbody></table>
+<h3 id='url-optional-query-parameters-2'>URL Optional Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>searchKey</td>
+<td>Ref no</td>
+</tr>
+<tr>
+<td>status</td>
+<td>List of statuses combined as string</td>
+</tr>
+<tr>
+<td>dateRange</td>
+<td>In string format</td>
+</tr>
+</tbody></table>
+<h3 id='query-sample-2'>Query Sample</h3>
+<p><code>limit=10&amp;skip=0&amp;regionId=jhdshjshjdshjds&amp;zoneId=dfff35e0722b7a4e2dd3f93c5795e022</code></p>
+<h3 id='response-7'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='verify-document'>Verify Document</h2><h3 id='http-request-9'>HTTP Request</h3>
+<p><code>Get /documents/:documentId?validationFlag=1</code></p>
+<h3 id='query-parameter'>Query Parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>validationFlag</td>
+<td>Value to set Validation to</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doc validated successfully."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"driverId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"vehicleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"docUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reminderBefore"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"documentTypeId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isValid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"aboutToExpire"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"documentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"expired"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"expiryDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h3 id='response-8'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='verify-vehicle'>Verify Vehicle</h2><h3 id='http-request-10'>HTTP Request</h3>
+<p><code>Put /driver/vehicle/update</code></p>
+<h3 id='request-4'>Request</h3>
+<ul>
+<li>Body (application/json)</li>
+</ul>
+
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"ownerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"make"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"maximumPassengers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"categoryImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carCategoryId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"batch"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Number"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"otp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"categoryName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"fuelType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"transmissionType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"vehicleRegistrationNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"vehicleDocs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"String"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"vehicleId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"driverId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"zoneId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h3 id='http-response'>HTTP Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='checkin-checkout'>Checkin / Checkout</h2><h3 id='http-request-11'>HTTP Request</h3>
+<p><code>Get /checkincheckout</code></p>
+<h3 id='url-query'>URL Query</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>checkIn</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-response-2'>HTTP Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='service-status-approval-status-verification-status-status'>Service Status / Approval Status / Verification Status / Status</h2><h3 id='http-request-12'>HTTP Request</h3>
+<p><code>Put /drivers/:driverId</code></p>
+
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"reason"</span><span class="p">:</span><span class="s2">"String"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='request-5'>Request</h3>
+<ul>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='response-9'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"Driver successfully blocked"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='passengers'>Passengers</h2><h3 id='http-request-13'>HTTP Request</h3>
+<p><code>Get /passengers</code></p>
+
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"snID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"userID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"walletID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"paymentMethod"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalMoneySpent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amountOwing"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalDistance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"completedRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancellationPercentage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancelledRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"locations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"statusLog"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"String"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"referredBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DateTime"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DateTime"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre><h3 id='response-10'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h3 id='url-query-parameter'>URL Query Parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>searchString</td>
+<td>String</td>
+</tr>
+<tr>
+<td>iso2</td>
+<td>String;</td>
+</tr>
+<tr>
+<td>status</td>
+<td>req.body.status;</td>
+</tr>
+</tbody></table>
+<h2 id='passenger'>Passenger</h2><h3 id='http-request-14'>HTTP Request</h3>
+<p><code>Get /passengers</code></p>
+
+<blockquote>
+<p>Request body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"snID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"userID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"walletID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"paymentMethod"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalMoneySpent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amountOwing"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalDistance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"completedRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancellationPercentage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancelledRides"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Number"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"locations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Object"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"iso2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"referralCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"statusLog"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"String"</span><span class="p">],</span><span class="w">
+      </span><span class="s2">"referredBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUse"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inUseBy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Boolean"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DateTime"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DateTime"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='response-11'>Response</h3>
+<ul>
+<li>Status: 200 success</li>
+<li>Body (application/json)</li>
+</ul>
+<h2 id='passenger-block-activate-hold'>Passenger  Block / Activate / Hold</h2><h3 id='http-request-15'>Http Request</h3>
+<p><code>Get /passengers/:passengerId</code></p>
+
+<blockquote>
+<p>Response body</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='url-query-parameter-2'>URL query parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>status</td>
+<td>String</td>
+</tr>
+</tbody></table>
 <h2 id='error-response'>Error Response</h2>
 <p>{
   &quot;error&quot;: {
-    &quot;message&quot;: &quot;Some error message&quot;,
-    &quot;status&quot;: error status code
-  }
+    &quot;message&quot;: &quot;Some error message&quot;
+  },
+  &quot;status&quot;: error status code
  }</p>
 
       </div>
